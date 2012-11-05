@@ -1,0 +1,40 @@
+There is no documentation on the TADS programming languages included in
+any of the FrobTADS packages.  Luckily, the TADS homepage offers
+various downloads and links:
+
+http://www.tads.org
+  The TADS homepage; has the latest news, updates and documentation for
+  everything TADS-related.
+
+http://www.tads.org/t3doc/doc
+  The TADS 3 Bookshelf.  Everything you need to know about writing IF
+  in TADS 3 can be found there.  A must-visit.  It contains various
+  books, browsable online (HTML) and downloadable (PDF).
+
+http://teladesign.com/tads-manual/tadsman.zip
+  The TADS 2 Author's Manual (HTML format).
+
+http://teladesign.com/tads-manual
+  This leads to the online-version of the TADS 2 Author's Manual.
+
+
+Using the compilers
+===================
+
+The compilers can be invoked with:
+
+  tadsc   (TADS 2 compiler)
+  t3make  (TADS 3 compiler)
+
+Note that, unlike the interpreter, the compilers don't support GNU-like
+command line options, which means that "short options" aren't available.
+For example, use "-help" instead of "--help".  This is to ensure
+compatibility of compiler command line syntax between different ports.
+
+For Tads 3, you don't need to specify where the compiler's include files
+are installed.  But the Tads 2 compiler works different.  When invoking
+'tadsc', you'll have to use the -i option:
+
+  tadsc -i /usr/local/share/frobtads/tads2 mygame.t
+
+(Remember to use the actual path if you installed somewhere else.)

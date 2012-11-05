@@ -1,0 +1,3 @@
+tads3/tcglob.o: tads3/tcglob.cpp tads3/tcglob.h
+
+tads3/tcglob.h:
